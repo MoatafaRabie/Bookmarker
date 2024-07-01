@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="good.css" type="text/css"/>
+    <script src="pop.js"></script>
+
+
+
+</head>
+<body>
+    <div>
+        <h1>Bookmarker</h1>
+        <span id="spa"> </span>
+        
+    </div>
+    <h2 id="bas">Bookmark your favorite sites</h2>
+    <div>
+        Site Name<br>
+        <input id ="name"type="text" placeholder="Bookmark Name" onkeyup="dod(this)" /><br>
+        <span id="ttt">Site Name must be at least 3 letters</span>
+    </div>
+    <div>
+        site URL<br>
+       <input id="urll" type="text" placeholder="http://www.example.com" onkeyup="num(this)" /><br>
+       <span id="bbb">Your URL is not-valid</span>
+    </div>
+    <div id="but">
+        <button class="id" onclick="bas(this)">Submit</button>
+        
+    </div>
+    <span id="spa"></span>
+    <div id="pop">
+        <table>
+            <thead>
+            <tr>
+                <th>Index </th>
+                <th>WebsiteName </th>
+                <th>Visit </th>
+                <th>Delete</th>
+            </tr>
+           </thead>
+           <tbody id="indix">
+            <tr>
+                <th></th>
+                <th id="name1"></th>
+                <th ><button class="id" id="visit" onclick="openn(this)">Visit</button></th>
+                <th ><button class="id" id="del" onclick="closee(this)">Delete</button></th>
+            </tr>
+           </tbody>
+        </table>
+    </div>
+
+    
+</body>
+</html>
